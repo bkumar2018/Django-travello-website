@@ -2,7 +2,7 @@
 
 This is sample website using Travello free templates project name [HelloWorld]
 
-Technologies used :
+Technologies used :  pip freeze : ===> 
 asgiref==3.2.3
 Django==2.1.15
 django-pyodbc==1.1.3
