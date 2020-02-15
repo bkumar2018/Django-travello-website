@@ -83,8 +83,8 @@ DATABASES = {
         'ENGINE': 'sql_server.pyodbc',
         'NAME': 'travello',
         'USER': 'sa',
-        'PASSWORD': 'root123',
-        'HOST': 'DESKTOP-6A7BK1O',
+        'PASSWORD': '*******',
+        'HOST': 'localhost',
 
         'OPTIONS': {
             'driver': 'ODBC Driver 11 for SQL Server',
