@@ -30,3 +30,4 @@ Migrations for 'travello':
 #python manage.py sqlmigrate travello 0001	
 #python manage.py migrate
 
+#python manage.py createsuperuser 
