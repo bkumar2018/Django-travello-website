@@ -15,4 +15,18 @@ sqlparse==0.3.0
 Database:
 MSSQL server 2014
 
+///////////////////////////////////
+
+git clone https://github.com/bkumar2018/Django-travello-website.git
+pip list # check for all the require modules present if not then install as below:
+pip install django
+pip install Pillow
+Edit settings.py as per DB configurations
+
+#python manage.py makemigrations
+Migrations for 'travello':
+  travello\migrations\0001_initial.py
+    - Create model Destination
+#python manage.py sqlmigrate travello 0001	
+#python manage.py migrate
 
