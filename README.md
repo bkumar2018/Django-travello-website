@@ -64,4 +64,12 @@ show variables like '%version%';    --- Check the mysql db version 8.0.9
 OR
 -- ALTER USER 'dbadmin'@'%' IDENTIFIED WITH mysql_native_password BY '******';
 
+Run below command for django to create tables for travello project.
+
+#python manage.py makemigrations
+#python manage.py sqlmigrate travello 0001
+#python manage.py migrate
+#python manage.py runserver
+
+
 
