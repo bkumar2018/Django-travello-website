@@ -47,7 +47,7 @@ DATABASES = {
 }
 ////
 
-Download mysqlclinet file "mysqlclient-1.4.6-cp38-cp38-win32.whl" from link : "https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient" 
+Download mysqlclient file "mysqlclient-1.4.6-cp38-cp38-win32.whl" from link : "https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient" 
 Run command to install it.
 #pip install mysqlclient-1.4.6-cp38-cp38-win32.whl
 
