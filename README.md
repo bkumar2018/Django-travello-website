@@ -71,5 +71,18 @@ Run below command for django to create tables for travello project.
 #python manage.py migrate
 #python manage.py runserver
 
+Create a admin superuser for accessing admin page:
+D:\Automation\Git-Projects\Django-travello-website>python manage.py createsuperuser
+Username (leave blank to use 'datantar'): admin
+Email address: admin@datantar.com
+Password:
+Password (again):
+This password is too short. It must contain at least 8 characters.
+This password is too common.
+This password is entirely numeric.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+
+Access admin page link "http://127.0.0.1:8000/admin"
 
 
