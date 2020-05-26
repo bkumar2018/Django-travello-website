@@ -31,3 +31,37 @@ Migrations for 'travello':
 #python manage.py migrate
 
 #python manage.py createsuperuser 
+
+/////
+DB configuration for MySQL DB :
+# Database settings for MySQL in settings.py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',        
+        'NAME': 'travello',
+        'USER': 'dbadmin',
+        'PASSWORD': '******',
+        'HOST': 'localhost', 
+        'PORT': 3306,
+    }
+}
+////
+
+Download mysqlclinet file "mysqlclient-1.4.6-cp38-cp38-win32.whl" from link : "https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient" 
+Run command to install it.
+#pip install mysqlclient-1.4.6-cp38-cp38-win32.whl
+
+OPen Mysql WorkBench.
+create database travello; 
+create user dbadmin identified by '******';   --- This is fine if Mysql version is below 8.0
+grant all on travello.* to 'dbadmin'@'%';
+flush privileges;
+
+show variables like '%version%';    --- Check the mysql db version 8.0.9
+
+-- For ERROR : django.db.utils.OperationalError: (2059, "Authentication plugin 'caching_sha2_password' cannot be loaded: The specified module could not be found.\r\n") 
+-- Solution:  CREATE USER 'username'@'ip_address' IDENTIFIED WITH mysql_native_password BY 'password';
+OR
+-- ALTER USER 'dbadmin'@'%' IDENTIFIED WITH mysql_native_password BY '******';
+
+
